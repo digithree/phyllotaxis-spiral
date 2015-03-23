@@ -16,9 +16,9 @@ import com.leapmotion.leap.Listener;
  * @author simonkenny
  */
 public class LeapListener extends Listener {
-    private final float MAX_HEIGHT = 800.f;
-    private final float MAX_DEPTH = 400.f;
-    private final float MAX_WIDTH = 400.f;
+    private final float MAX_HEIGHT = 400.f;
+    private final float MAX_DEPTH = 200.f;
+    private final float MAX_WIDTH = 200.f;
     
     private final PhyJFrame phyframe;
     

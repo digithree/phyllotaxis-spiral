@@ -24,8 +24,8 @@ public class PhyJFrame extends javax.swing.JFrame {
     private final float ANGLE_INC_MIN = 0.001f;
     private final float ANGLE_INC_MAX = 3.14f / 10.f;
     
-    //private final Controller controller;
-    //private final LeapListener listener;
+    private final Controller controller;
+    private final LeapListener listener;
     
     /**
      * Creates new form PhyJFrame
@@ -35,9 +35,9 @@ public class PhyJFrame extends javax.swing.JFrame {
         aApplet = new ProcessingApplet();
         jPanelProcessing.add(aApplet);
         aApplet.init();
-        //controller = new Controller();
-        //listener = new LeapListener(this);
-        //controller.addListener(listener);
+        controller = new Controller();
+        listener = new LeapListener(this);
+        controller.addListener(listener);
     }
 
     /**
